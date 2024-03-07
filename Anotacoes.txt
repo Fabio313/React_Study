@@ -1,0 +1,18 @@
+SPA(Single Page Application) = Uma pagina renderiza todas as paginas do sistema, apenas um carregamento do navegador
+Arquitetura em componentes = quebrar o site em pedaços, bom para reutilização de componentes
+Node.js = biblioteca utilizada pelo compilador para compilar JS em C++ garantindo alta performance
+NPM(Node Package Manager) = gerenciador de pacotes do Node
+
+//Comandos
+	//inicialização
+	npx create_react_app <nome> 
+	npm start
+
+	ou
+
+	npm create vite@latest (mais rapido / mais novo)
+	npm i
+	npm run dev 
+	
+//Estrutura 
+node_modules = dependencias do projeto ficam, normalmente criado com o "npm install" e colocado no gitignore
