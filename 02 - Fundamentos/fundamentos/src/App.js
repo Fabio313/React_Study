@@ -1,8 +1,12 @@
+//style
+import "./App.css";
+
 //components
 import FirstComponent from "./components/FirstComponent";
 import TemplateExpressions from "./components/TemplateExpressions";
-//style
-import "./App.css";
+import MyComponent from "./components/MyComponent";
+import Events from "./components/Events";
+import Challenge from "./components/Challenge";
 
 function App() {
   return (
@@ -10,6 +14,9 @@ function App() {
       <h1>Fundamentos React</h1>
       <FirstComponent />
       <TemplateExpressions />
+      <MyComponent />
+      <Events />
+      <Challenge />
     </div>
   );
 }

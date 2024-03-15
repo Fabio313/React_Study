@@ -1,5 +1,7 @@
 //Teste de comentario
 
+import MyComponent from "./MyComponent";
+
 const FirstComponent = () => {
   //Essa funcao faz XPTO
   return (
@@ -7,6 +9,7 @@ const FirstComponent = () => {
       {/*Jsx comentario */}
       <h1>Meu Primeiro Componente</h1>
       <p className="paragrafo">Meu Texto</p>
+      <MyComponent />
     </div>
   );
 };
