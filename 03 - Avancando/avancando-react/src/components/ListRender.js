@@ -13,11 +13,20 @@ const ListRender = () => {
     "Goat",
   ]);
 
-  const [users] = useState([
+  const [users, setUsers] = useState([
     { id: 1, name: "Rogerio", age: 31 },
     { id: 2, name: "Carlos", age: 18 },
     { id: 3, name: "Sidney", age: 20 },
   ]);
+
+  const deleteRandom = () => {
+    const randomNumber = Math.floor(Math.random() * 4);
+
+    setUsers((prevUsers) => {
+      console.log(prevUsers);
+      return prevUsers.filter((user) => randomNumber !== user.id);
+    });
+  };
 
   return (
     <div>
@@ -33,6 +42,7 @@ const ListRender = () => {
           </li>
         ))}
       </ul>
+      <button onClick={deleteRandom}>Deletar random user</button>
     </div>
   );
 };
